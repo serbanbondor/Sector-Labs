@@ -49,12 +49,65 @@ body {
 
 // Logo and Comapny Name
 .logo-name-section {
-    margin: 60px 0;
+    margin: 6vh 0 15vh 0;
 
     img {
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 45%;
+    }
+}
+
+// Links and Job Openings
+.links-job-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 6vh 0;
+    text-align: center;
+
+    h3 {
+        font-family: 'Oxygen', sans-serif;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 25px;
+    }
+
+    .border-links {
+        a {
+            border: 2px solid #fff;
+            display: inline-block;
+            border-radius: 50px;
+            width: 31px;
+            height: 31px;
+            text-align: center;
+            color: #fff;
+            @include easeOut;
+
+            &:hover {
+                background: #fff;
+                color: #333;
+            }
+        }
+
+        i {
+            font-size: 0.8rem;
+        }
+    }
+
+    .jobs-btn {
+        padding: 10px 25px;
+        border: 2px solid #fff;
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 1rem;
+        font-weight: 100;
+        @include easeOut;
+
+        &:hover {
+            background: #fff;
+            color: #333;
+        }   
     }
 }

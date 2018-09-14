@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+@import url("https://fonts.googleapis.com/css?family=Oxygen");
 body {
   background: #111;
   color: #fff;
@@ -43,14 +44,51 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 0.9rem;
     font-weight: 500;
-    transition: all 0.5s ease-out; }
+    transition: all 0.3s ease-out; }
     .mainNav a:hover {
       color: #00bfff; }
 
 .logo-name-section {
-  margin: 60px 0; }
+  margin: 6vh 0 15vh 0; }
   .logo-name-section img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 45%; }
+
+.links-job-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 6vh 0;
+  text-align: center; }
+  .links-job-section h3 {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 25px; }
+  .links-job-section .border-links a {
+    border: 2px solid #fff;
+    display: inline-block;
+    border-radius: 50px;
+    width: 31px;
+    height: 31px;
+    text-align: center;
+    color: #fff;
+    transition: all 0.3s ease-out; }
+    .links-job-section .border-links a:hover {
+      background: #fff;
+      color: #333; }
+  .links-job-section .border-links i {
+    font-size: 0.8rem; }
+  .links-job-section .jobs-btn {
+    padding: 10px 25px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    transition: all 0.3s ease-out; }
+    .links-job-section .jobs-btn:hover {
+      background: #fff;
+      color: #333; }
