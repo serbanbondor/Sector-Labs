@@ -1,0 +1,36 @@
+// Color and Image Variables
+$primary-color: #111;
+$secondary-color: #00bfff;
+$show-home-image: true;
+$home-image: url(../img/photo.jpeg);
+$background-opacity : 0.9;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');    
+
+// Transition and Background Mixins
+@mixin easeOut {
+    transition: all 0.5s ease-out;
+}
+
+@mixin background {
+    @if $show-home-image {
+        &#bg-img {
+            background: $home-image;
+            background-attachment: fixed;
+            background-size: cover;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                background: rgba($primary-color, 
+                    $background-opacity);
+            }
+        }
+    }
+}
