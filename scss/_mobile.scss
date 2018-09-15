@@ -11,6 +11,10 @@
   
 // Tablets & Small Laptops
 @include mediaMd {
+    body {
+        @include background;
+    }
+
     .wrapper {
         width: 80%;
     }
@@ -18,15 +22,28 @@
   
 // Smartphones
 @include mediaSm {
+    body {
+        @include background-Sm;
+    }
+
     .mainNav {
         display: none;
     }
+
     .links-job-section {
         grid-template-columns: 1fr;
         grid-row-gap: 5vh;
+        margin: 10vh 0;
     }
+
+    .footer {
+        margin-top: 25vh;
+    }    
 }    
 
 // Extra Small Screens
 @include mediaXs {
+    .footer {
+        margin-top: 12vh;
+    }   
 }
