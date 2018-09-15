@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+@import url("https://fonts.googleapis.com/css?family=Oxygen");
+body {
+  background: #111;
+  color: #fff;
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; }
+  body#bg-img {
+    background: url(../img/photo.jpeg);
+    background-attachment: fixed;
+    background-size: cover; }
+    body#bg-img:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: rgba(17, 17, 17, 0.9); }
+
+.wrapper {
+  width: 60%;
+  margin: 0 auto; }
+
+/* Navigation Bar */
+.mainNav {
+  height: 80px;
+  padding: 10px 100px;
+  float: none;
+  text-align: center; }
+  .mainNav li {
+    display: inline-block;
+    float: none; }
+  .mainNav a {
+    line-height: 60px;
+    color: #999;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease-out; }
+    .mainNav a:hover {
+      color: #00bfff; }
+
+.logo-name-section {
+  margin: 6vh 0 15vh 0; }
+  .logo-name-section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%; }
+
+.links-job-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 6vh 0;
+  text-align: center; }
+  .links-job-section h3 {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 25px; }
+  .links-job-section .border-links a {
+    border: 2px solid #fff;
+    display: inline-block;
+    border-radius: 50px;
+    margin: 0 2px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    transition: all 0.3s ease-out; }
+    .links-job-section .border-links a:hover {
+      background: #fff;
+      color: #333; }
+  .links-job-section .border-links i {
+    font-size: .9rem; }
+  .links-job-section .jobs-btn {
+    padding: 10px 25px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    transition: all 0.3s ease-out; }
+    .links-job-section .jobs-btn:hover {
+      background: #fff;
+      color: #333; }
+
+.info-section hr {
+  background-color: #555; }
+
+.info-section p {
+  color: #ccc;
+  padding: 4vh 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px; }
+
+.footer {
+  margin-top: 30vh;
+  text-align: center; }
+  .footer a {
+    border: 2px solid #fff;
+    display: inline-block;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    margin: 0 3px;
+    text-align: center;
+    background: #fff;
+    color: #333;
+    transition: all 0.3s ease-out; }
+  .footer i {
+    font-size: 1rem; }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .footer {
+    margin-top: 28vh; } }
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 80%; } }
+
+@media screen and (max-width: 500px) {
+  .mainNav {
+    display: none; }
+  .links-job-section {
+    grid-template-columns: 1fr;
+    grid-row-gap: 5vh; } }
