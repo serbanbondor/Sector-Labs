@@ -37,7 +37,7 @@ $background-opacity : 0.9;
     }
 }
 
-// Responsive 
+// Responsive Media Queries
 @mixin mediaXs {
     @media screen and (max-width: 320px) {
         @content;

@@ -4,14 +4,27 @@
   
 // Desktops & Laptops
 @include mediaLg {
+    .footer {
+        margin-top: 28vh;
+    }    
 }
   
 // Tablets & Small Laptops
 @include mediaMd {
+    .wrapper {
+        width: 80%;
+    }
 }
   
 // Smartphones
 @include mediaSm {
+    .mainNav {
+        display: none;
+    }
+    .links-job-section {
+        grid-template-columns: 1fr;
+        grid-row-gap: 5vh;
+    }
 }    
 
 // Extra Small Screens

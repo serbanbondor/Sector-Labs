@@ -104,10 +104,10 @@ body {
   font-size: 1.1rem;
   letter-spacing: 1px; }
 
-footer {
-  margin-top: 300px;
+.footer {
+  margin-top: 30vh;
   text-align: center; }
-  footer a {
+  .footer a {
     border: 2px solid #fff;
     display: inline-block;
     border-radius: 50px;
@@ -118,5 +118,20 @@ footer {
     background: #fff;
     color: #333;
     transition: all 0.3s ease-out; }
-  footer i {
+  .footer i {
     font-size: 1rem; }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .footer {
+    margin-top: 28vh; } }
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 80%; } }
+
+@media screen and (max-width: 500px) {
+  .mainNav {
+    display: none; }
+  .links-job-section {
+    grid-template-columns: 1fr;
+    grid-row-gap: 5vh; } }
